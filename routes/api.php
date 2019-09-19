@@ -22,6 +22,8 @@ Route::group([
 ], function () {
     Route::post('login', 'AuthController@login');
     Route::post('signup', 'AuthController@signup');
+    Route::post('validate','MainController@validatePresence');
 });
 
-Route::post('start','MainController@startNewSession');
+Route::post('start','MainController@createNewSession');
+Route::post('next','MainController@changeTheQR');

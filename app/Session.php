@@ -12,7 +12,7 @@ class Session extends Model
      * @var array
      */
     protected $fillable = [
-
+        'qr', 'name'
     ];
 
     protected $table = 'session';

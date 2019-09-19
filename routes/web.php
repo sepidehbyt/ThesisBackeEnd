@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('qr-code-view', function () {
+    return view('qrCode');
+});
